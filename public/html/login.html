@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration page </title>
+    <link rel="stylesheet" href="../css/login.css">
+     <!-- Axios cdn -->
+   <script   src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+   
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id ="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+                <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+            
+            </div>
+            <form   id ="Login"class="input-group" >
+                <input type="text"  id="email" class="input-field" placeholder=" Enter email" required name="email">
+                
+               <input type="text" id="password" class="input-field" placeholder="enter password"  required name="password">
+               
+               <input type="checkbox" class="checkbox"><span>remember password</span>
+                <button type="submit" class="submit-btn" >login</button>
+            </form>
+
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder=" enter user name" required >
+                
+                <input type="email" class="input-field" placeholder=" Enter your role :Teacher or Student?" required>
+                <input type="email" class="input-field" placeholder="email-id" required>
+                
+               <input type="text" class="input-field" placeholder="enter password" required>
+
+               <input type="text" class="input-field" placeholder="confirm password" required>
+    
+               <input type="checkbox" class="checkbox"><span>i agree to terms and conditions</span>
+
+                <button type="submit" class="submit-btn">register</button>
+            </form>
+        </div>
+
+        </div>
+        <script  src="../js/login.js">
+            var y=document.getElementById("Register");
+            var x=document.getElementById("Login");
+var z=document.getElementById("btn");
+function Register(){
+    x.style.left="-400px";
+    y.style.left="50px";
+    z.style.left="50px";
+}
+function Login(){
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0px";
+}
+        </script>
+</body>
+</html>

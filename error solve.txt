@@ -1,0 +1,10 @@
+error 1:URI must include 
+hostname, domain name, and tld
+
+->use %40 in place of @ in password database conncetion ,due to special symbol @ show above error
+
+AppError
+super(message)
+:
+ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor
+
