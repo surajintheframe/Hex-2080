@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname,'public')))
 
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(express.json())
-app.set('view engin', 'ejs')
+app.set('view engine', 'ejs')
 
 
 
@@ -18,9 +18,9 @@ app.use('/api/v1/users',userRouter)
 
 
 
-// app.get("/", (req, res) => {
-//     res.render("home")
-// })
+app.get("/", (req, res) => {
+    res.render('./public/html/home.ejs')
+})
 
 
 

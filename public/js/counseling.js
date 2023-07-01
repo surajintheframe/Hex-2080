@@ -1,7 +1,7 @@
 
 
 //after using scoket-clint side cdn
-const socket = io("http://localhost:3005");
+const socket = io("http://localhost:3006");
 
 
 const messageform = document.querySelector(".chatbox form");
